@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn About Blood Donation - BloodLink</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a href="index.html" style="font-weight:700; color:#b71c1c;">BloodLink</a>
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="navHome">Home</a>
+        <a href="request.html" data-i18n="navRequest">Request Blood</a>
+        <a href="donate.html" data-i18n="navDonate">Become a Donor</a>
+        <a href="learn.html" class="active" data-i18n="navLearn">Learn About Blood Donation</a>
+        <a href="donors.html" data-i18n="navDonors">Donor List</a>
+        <a href="coordinator.html" data-i18n="navCoord">Coordinator</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <label for="langSelect">🌐</label>
+        <select id="langSelect" onchange="setLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+          <option value="mr">मराठी</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 data-i18n="learnTitle">Blood Donation Knowledge Hub</h1>
+
+    <section class="card" style="margin-bottom:1rem;">
+      <h2>History of Blood Donation</h2>
+      <p>Modern blood transfusions began in the early 1800s; the first documented successful human-to-human transfusion happened in 1818 by Dr. James Blundell for a postpartum patient. In the 20th century, Karl Landsteiner discovered blood groups in 1901, enabling safe matching.</p>
+      <p>In India, the National Blood Policy (2002) and National Blood Transfusion Council (NBTC) established voluntary non-remunerated donation systems with strong quality control.</p>
+      <p><strong>First recorded blood donor:</strong> In 1818, the first successful blood donor was a patient to patient transfusion by Dr. Blundell; another early pioneering donor was a British soldier in the Boer War.</p>
+    </section>
+
+    <section class="card" style="margin-bottom:1rem;">
+      <h2>Blood Types & Compatibility</h2>
+      <ul>
+        <li>Type O−: Universal donor (can give to all, rare)</li>
+        <li>Type O+: Most common; can donate to all positives</li>
+        <li>Type A−/A+: Can give to A and AB recipients</li>
+        <li>Type B−/B+: Can give to B and AB recipients</li>
+        <li>Type AB−/AB+: Universal plasma donors; AB+ receives all types</li>
+      </ul>
+      <p>Rh factor (+/−) is critical for transfusions; mismatch can cause reactions.</p>
+    </section>
+
+    <section class="card" style="margin-bottom:1rem;">
+      <h2>How it Started in India</h2>
+      <p>Blood donation in India formally began in the mid-20th century with voluntary donor clubs and hospital-based blood banks. Over time, government campaigns and NSS camps increased awareness and participation. Today, camps are common on college campuses and during festivals.</p>
+    </section>
+
+    <section class="card" style="margin-bottom:1rem;">
+      <h2>Indian Laws & Regulations</h2>
+      <ul>
+        <li>Voluntary, non-remunerated blood donation is the cornerstone of Indian policy.</li>
+        <li>National Blood Policy (2002) requires all blood banks to follow strict donor screening and testing.</li>
+        <li>WHO guidelines require transfusion safety, traceability, and infection screening (HIV, Hepatitis B/C, malaria).</li>
+        <li>Donor age: 18–65; weight >=50 kg; hemoglobin >=12.5 g/dL; no high-risk behavior.</li>
+        <li>Regulations enforced by National AIDS Control Organization (NACO) and NBTC.</li>
+      </ul>
+    </section>
+
+    <section class="card" style="margin-bottom:1rem;">
+      <h2>Lives Saved in India (Year-wise)</h2>
+      <div style="display:flex;align-items:flex-end;gap:.5rem;min-height:180px;">
+        <div style="flex:1;text-align:center;"><div style="background:#ffcdd2;height:40%;border-radius:6px;"></div><small>2018</small></div>
+        <div style="flex:1;text-align:center;"><div style="background:#ef9a9a;height:55%;border-radius:6px;"></div><small>2019</small></div>
+        <div style="flex:1;text-align:center;"><div style="background:#e57373;height:70%;border-radius:6px;"></div><small>2020</small></div>
+        <div style="flex:1;text-align:center;"><div style="background:#ef5350;height:80%;border-radius:6px;"></div><small>2021</small></div>
+        <div style="flex:1;text-align:center;"><div style="background:#f44336;height:100%;border-radius:6px;"></div><small>2022</small></div>
+      </div>
+      <p class="small">Higher bars reflect increased donations and lives saved due to stronger community engagement.</p>
+    </section>
+
+    <section class="card" style="margin-bottom:1rem;">
+      <h2>Indian Laws & Regulations</h2>
+      <ul>
+        <li>National Blood Policy (India) ensures voluntary blood donation and safe transfusion.</li>
+        <li>WHO guidelines require screening, storage, and donor counselling.</li>
+        <li>Blood banks must follow standardized testing and a robust traceability process.</li>
+      </ul>
+    </section>
+
+    <section class="card" style="margin-bottom:1rem;">
+      <h2>Who Can Donate Blood (India Guidelines)</h2>
+      <ul>
+        <li>Age: 18–65 years</li>
+        <li>Weight: ≥50 kg</li>
+        <li>Hemoglobin: ≥12.5 g/dL</li>
+      </ul>
+    </section>
+
+    <section class="card" style="margin-bottom:1rem;">
+      <h2>Who Cannot Donate</h2>
+      <ul>
+        <li>Chronic diseases (uncontrolled diabetes, heart issues, cancer)</li>
+        <li>Recent infections, surgery, or hospitalization</li>
+        <li>Pregnancy or recent childbirth</li>
+        <li>Certain medications and infections like HIV/hepatitis</li>
+      </ul>
+    </section>
+
+    <section class="card" style="margin-bottom:1rem;">
+      <h2>Tips to Increase Blood Levels</h2>
+      <ul>
+        <li>Iron-rich foods: spinach, beetroot, dates, pomegranate</li>
+        <li>Vitamin C to improve iron absorption</li>
+        <li>Stay hydrated before and after donation</li>
+        <li>Follow doctor guidance for nutrition and rest</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer"><p>© 2026 All Rights Reserved – Shivam Sawale</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

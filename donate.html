@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become a Donor - BloodLink</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a href="index.html" style="font-weight:700; color:#b71c1c;">BloodLink</a>
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="navHome">Home</a>
+        <a href="request.html" data-i18n="navRequest">Request Blood</a>
+        <a href="donate.html" class="active" data-i18n="navDonate">Become a Donor</a>
+        <a href="learn.html" data-i18n="navLearn">Learn About Blood Donation</a>
+        <a href="donors.html" data-i18n="navDonors">Donor List</a>
+        <a href="coordinator.html" data-i18n="navCoord">Coordinator</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <label for="langSelect">🌐</label>
+        <select id="langSelect" onchange="setLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+          <option value="mr">मराठी</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 data-i18n="donateTitle">Donor Registration</h1>
+    <p>Register to become an approved blood donor. The medical eligibility engine is built-in to keep you safe.</p>
+    <form id="donorForm" class="card" style="padding:1rem;">
+      <div class="form-grid">
+        <label>Name <input type="text" name="name" required></label>
+        <label>Age <input type="number" name="age" min="18" max="65" required></label>
+        <label>Weight (kg) <input type="number" name="weight" min="50" required></label>
+        <label>Blood Group <select name="bloodGroup" required><option value="">Select</option><option>O+</option><option>A+</option><option>B+</option><option>AB+</option><option>O-</option><option>A-</option><option>B-</option><option>AB-</option></select></label>
+        <label>Phone <input type="tel" name="phone" required></label>
+        <label>City <input type="text" name="city" required></label>
+      </div>
+
+      <h2 data-i18n="eligibilityTitle">Medical History & Eligibility Check</h2>
+      <div class="card" style="background:#fff5f5; border:1px solid #f2c0c0; padding:0.85rem;">
+        <label><input type="checkbox" name="medicalHistory" value="Asthma"> Asthma</label>
+        <label><input type="checkbox" name="medicalHistory" value="Diabetes"> Diabetes</label>
+        <label><input type="checkbox" name="medicalHistory" value="Thyroid Disorder"> Thyroid Disorder</label>
+        <label><input type="checkbox" name="medicalHistory" value="High Blood Pressure"> High Blood Pressure</label>
+        <label><input type="checkbox" name="medicalHistory" value="Heart Disease"> Heart Disease</label>
+        <label><input type="checkbox" name="medicalHistory" value="Recent Surgery"> Recent Surgery</label>
+        <label><input type="checkbox" name="medicalHistory" value="Low Hemoglobin"> Low Hemoglobin</label>
+        <label><input type="checkbox" name="medicalHistory" value="HIV"> HIV</label>
+        <label><input type="checkbox" name="medicalHistory" value="Hepatitis B"> Hepatitis B</label>
+        <label><input type="checkbox" name="medicalHistory" value="Hepatitis C"> Hepatitis C</label>
+        <label><input type="checkbox" name="medicalHistory" value="Malaria"> Malaria</label>
+        <label><input type="checkbox" name="medicalHistory" value="Covid-19"> COVID-19 (recent recovery)</label>
+        <label><input type="checkbox" name="medicalHistory" value="No medical history (Safe to donate)"> No medical history (Safe to donate)</label>
+        <label>Other <input type="text" id="otherCondition" name="otherCondition" placeholder="Describe"></label>
+      </div>
+
+      <div class="alert" id="eligibilityAlert" style="display:none;"></div>
+      <div id="medicalReasons" class="small" style="padding:.5rem;background:#fff8f8;border:1px solid #f5cccc;border-radius:6px;">No condition selected yet.</div>
+      <div style="margin:0.95rem 0;">
+        <label>Availability <select name="availability"><option value="available">Available</option><option value="not-available">Not Available</option></select></label>
+      </div>
+      <button class="btn" type="submit">Submit Registration</button>
+    </form>
+  </main>
+
+  <footer class="footer"><p>© 2026 All Rights Reserved – Shivam Sawale</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

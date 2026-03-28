@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - BloodLink</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a href="index.html" style="font-weight:700; color:#b71c1c;">BloodLink</a>
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="navHome">Home</a>
+        <a href="request.html" data-i18n="navRequest">Request Blood</a>
+        <a href="donate.html" data-i18n="navDonate">Become a Donor</a>
+        <a href="learn.html" data-i18n="navLearn">Learn About Blood Donation</a>
+        <a href="donors.html" data-i18n="navDonors">Donor List</a>
+        <a href="coordinator.html" data-i18n="navCoord">Coordinator</a>
+        <a href="contact.html" class="active" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <label for="langSelect">🌐</label>
+        <select id="langSelect" onchange="setLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+          <option value="mr">मराठी</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="card" style="margin-bottom:1rem; display:flex; align-items:center; gap:0.75rem;">
+      <div style="width:48px; height:48px; border-radius:50%; background:linear-gradient(135deg,#c62828,#f44336); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; box-shadow:0 4px 10px rgba(0,0,0,.2);">AI</div>
+      <div>
+        <h2 style="margin:.2rem 0; font-size:1.1rem;">Created by Robotics & AI Students</h2>
+        <p style="margin:0; font-size:.9rem; color:#333;">Team: BloodLink (Robotics & AI [2025-2026])</p>
+      </div>
+    </div>
+    <h1>Contact & About</h1>
+    <p>Emergency helpline and NSS coordinator details.</p>
+    <div class="cards" style="margin-top:0.8rem;">
+      <article class="card"><h3>NSS Team</h3><p>Coordinator: Shivam Sawale</p><p>Email: nss@bloodlink.com</p></article>
+      <article class="card"><h3>Emergency Helpline</h3><p>+91 9011132963</p><p>Available 24x7</p></article>
+      <article class="card"><h3>Project Details</h3><p>BloodLink aims to reduce waiting time for blood by connecting donors, requests and coordinators in real-time.</p></article>
+    </div>
+  </main>
+
+  <footer class="footer"><p>© 2026 All Rights Reserved – Shivam Sawale</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

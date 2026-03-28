@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donor List - BloodLink</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a href="index.html" style="font-weight:700; color:#b71c1c;">BloodLink</a>
+      <nav class="nav-links">
+        <a href="index.html" data-i18n="navHome">Home</a>
+        <a href="request.html" data-i18n="navRequest">Request Blood</a>
+        <a href="donate.html" data-i18n="navDonate">Become a Donor</a>
+        <a href="learn.html" data-i18n="navLearn">Learn About Blood Donation</a>
+        <a href="donors.html" class="active" data-i18n="navDonors">Donor List</a>
+        <a href="coordinator.html" data-i18n="navCoord">Coordinator</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <label for="langSelect">🌐</label>
+        <select id="langSelect" onchange="setLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+          <option value="mr">मराठी</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Donor List</h1>
+    <p>Filter donors by blood group, city, and availability.</p>
+    <div class="card" style="margin-bottom:1rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:0.5rem;">
+      <select id="filterBlood"><option value="">All Blood Groups</option><option>O+</option><option>A+</option><option>B+</option><option>AB+</option><option>O-</option><option>A-</option><option>B-</option><option>AB-</option></select>
+      <select id="filterCity"><option value="">All Cities</option><option>Mumbai</option><option>Pune</option><option>Delhi</option><option>Bengaluru</option></select>
+      <select id="filterAvailability"><option value="">All</option><option>Available</option><option>Not Available</option></select>
+      <input id="filterSearch" placeholder="Search name or phone" />
+    </div>
+    <table id="donorTable">
+      <thead><tr><th>Name</th><th>Blood Group</th><th>City</th><th>Availability</th><th>Contact</th></tr></thead>
+      <tbody>
+        <tr><td>Rohit Sharma</td><td>O+</td><td>Mumbai</td><td>Available</td><td>9876543210</td></tr>
+        <tr><td>Anita Deshmukh</td><td>A+</td><td>Pune</td><td>Not Available</td><td>9123456789</td></tr>
+        <tr><td>Vikas Patel</td><td>B+</td><td>Ahmedabad</td><td>Available</td><td>9988776655</td></tr>
+        <tr><td>Kavita Singh</td><td>AB-</td><td>Delhi</td><td>Available</td><td>9012345678</td></tr>
+        <tr><td>Sunita Rao</td><td>O-</td><td>Bengaluru</td><td>Not Available</td><td>9090909090</td></tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="footer"><p>© 2026 All Rights Reserved – Shivam Sawale</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
