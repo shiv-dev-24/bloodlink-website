@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .faq { margin: 20px; }
+        .question { background-color: #007BFF; color: white; padding: 10px; cursor: pointer; border: none; width: 100%; text-align: left; outline: none; font-size: 18px; }
+        .answer { padding: 10px; background-color: #f1f1f1; display: none; }
+    </style>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="faq">
+        <h1 data-i18n="faq.title">Frequently Asked Questions</h1>
+
+        <button class="question" onclick="toggleAnswer('eligibility')" data-i18n="faq.whoCanDonate">Who can donate?</button>
+        <div class="answer" id="eligibility">
+            <p data-i18n="faq.eligibility.answer">To be eligible to donate blood, you must be at least 17 years old, weigh at least 110 pounds, and be in good health.</p>
+        </div>
+
+        <button class="question" onclick="toggleAnswer('frequency')" data-i18n="faq.howOftenCanIDonate">How often can I donate?</button>
+        <div class="answer" id="frequency">
+            <p data-i18n="faq.frequency.answer">You can donate whole blood every 56 days. Platelets can be donated more frequently, usually every 7 days.</p>
+        </div>
+
+        <button class="question" onclick="toggleAnswer('benefits')" data-i18n="faq.benefitsOfBloodDonation">Benefits of blood donation?</button>
+        <div class="answer" id="benefits">
+            <p data-i18n="faq.benefits.answer">Blood donation can help save lives, and it also has health benefits such as reducing the risk of heart disease and improving cardiovascular health.</p>
+        </div>
+
+        <button class="question" onclick="toggleAnswer('process')" data-i18n="faq.howBloodRequestsWork">How blood requests work?</button>
+        <div class="answer" id="process">
+            <p data-i18n="faq.process.answer">The process involves hospitals notifying blood banks of the need for blood, which is then matched with donors.</p>
+        </div>
+
+        <button class="question" onclick="toggleAnswer('medicalEligibility')" data-i18n="faq.medicalEligibilityQuestions">Medical eligibility questions?</button>
+        <div class="answer" id="medicalEligibility">
+            <p data-i18n="faq.medicalEligibility.answer">Certain conditions may disqualify you from donating, such as recent surgeries, infections, or certain medications.</p>
+        </div>
+
+        <button class="question" onclick="toggleAnswer('donorSafety')" data-i18n="faq.donorSafety">Donor safety?</button>
+        <div class="answer" id="donorSafety">
+            <p data-i18n="faq.donorSafety.answer">The donation process is safe, and side effects are usually minor such as slight dizziness or bruising.</p>
+        </div>
+
+        <button class="question" onclick="toggleAnswer('bloodTypeFaqs')" data-i18n="faq.bloodTypeFaqs">Blood type FAQs?</button>
+        <div class="answer" id="bloodTypeFaqs">
+            <p data-i18n="faq.bloodType.answer">It’s important to know your blood type as it determines compatibility with recipients during transfusions.</p>
+        </div>
+
+        <button class="question" onclick="toggleAnswer('howToRegister')" data-i18n="faq.howToRegister">How to register?</button>
+        <div class="answer" id="howToRegister">
+            <p data-i18n="faq.registration.answer">You can register to donate by visiting our website or contacting your local blood bank.</p>
+        </div>
+
+        <button class="question" onclick="toggleAnswer('coordinatorDashboard')" data-i18n="faq.coordinatorDashboardInfo">Coordinator dashboard info?</button>
+        <div class="answer" id="coordinatorDashboard">
+            <p data-i18n="faq.coordinatorDashboard.answer">The coordinator dashboard provides insights and information on donation drives and donor data.</p>
+        </div>
+    </div>
+</body>
+</html>
